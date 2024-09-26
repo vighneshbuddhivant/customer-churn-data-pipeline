@@ -1,9 +1,9 @@
 # Customer Churn Data Analysis Project
-
 This project focuses on analyzing customer churn, which is the process of customers discontinuing their use of a company's services. We used the **Telecom Customer Churn Dataset** (downloaded from Kaggle) and automated an end-to-end ETL pipeline with AWS Glue, Amazon Redshift, and Apache Airflow. We created dashboards for data visualization using **Power BI** and performed SQL queries using **Amazon Athena**.
+- **Dataset Source**: [Kaggle - Telecom Customer Churn Dataset](https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset?resource=download)
+- **YouTube Reference**: [End-to-End Customer Churn Project Walkthrough](https://www.youtube.com/watch?v=VrqO_9MXak0&list=PLACD_PaYcVF1Hzzc1Ds56bD7oUkfiL_Lv&index=11)
 
 ## Architecture Overview
-
 1. **Amazon S3**: For storing the customer churn data files.
 2. **AWS Glue**: Used for data cataloging and creating ETL jobs.
 3. **Amazon Redshift**: Data warehouse for storage and analysis.
@@ -12,7 +12,6 @@ This project focuses on analyzing customer churn, which is the process of custom
 6. **Power BI**: For creating customer churn analysis dashboards.
 
 ## Workflow
-
 ### 1. AWS Setup
 - **Create an IAM User**: Ensure the user has the necessary permissions to interact with S3, Glue, Redshift, and other services.
 - **Launch EC2 Instance**: Create an EC2 instance (`ec2_customer_churn_project_instance`) with necessary configurations.
@@ -33,7 +32,6 @@ This project focuses on analyzing customer churn, which is the process of custom
   pip install apache-airflow-providers-amazon
   airflow standalone
   ```
-
 - **Start Apache Airflow** and ensure port `8080` is open in the security group to access Airflow UI.
 
 ### 3. Visual Studio Code Setup
@@ -72,4 +70,3 @@ This project focuses on analyzing customer churn, which is the process of custom
 
 ## Conclusion
 This project demonstrates a complete end-to-end data pipeline from data ingestion to dashboard creation using AWS services. By using Apache Airflow for orchestration, the ETL process is fully automated, making the system scalable and efficient.
-
