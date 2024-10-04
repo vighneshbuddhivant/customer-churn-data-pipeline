@@ -4,6 +4,8 @@ This project focuses on analyzing customer churn, which is the process of custom
 - **YouTube Reference**: [End-to-End Customer Churn Project Walkthrough](https://www.youtube.com/watch?v=VrqO_9MXak0&list=PLACD_PaYcVF1Hzzc1Ds56bD7oUkfiL_Lv&index=11)
 
 ## Architecture Overview
+![](https://github.com/vighneshbuddhivant/customer-churn-data-pipeline/blob/20c5c625a5ed69ce206e465710ac5219725147b6/customer_churn_pipeline_architecture.png)
+
 1. **Amazon S3**: For storing the customer churn data files.
 2. **AWS Glue**: Used for data cataloging and creating ETL jobs.
 3. **Amazon Redshift**: Data warehouse for storage and analysis.
